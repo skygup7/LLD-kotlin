@@ -1,2 +1,2 @@
 # LLD-kotlin
-Kotlin solutions to well known Low level design problems
+Solutions to well known Low level design problems in our favorite language *Kotlin*.
