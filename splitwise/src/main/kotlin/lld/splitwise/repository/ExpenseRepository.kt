@@ -5,9 +5,6 @@ import lld.splitwise.models.Expense
 
 interface ExpenseRepository {
 
-    /**
-     *
-     */
     fun saveExpense(expense: Expense)
 
     /**
