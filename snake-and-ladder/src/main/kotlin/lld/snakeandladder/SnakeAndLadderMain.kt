@@ -38,4 +38,8 @@ fun main() {
     logger.info (
         "Winning order is: " + snakeAndLadderGame.getWinningOrder().joinToString(", ") { it.name }
     )
+
+    logger.info(
+        "Thanks for playing the game. See you next time!!!"
+    )
 }
