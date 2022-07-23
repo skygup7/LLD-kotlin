@@ -1,7 +1,9 @@
 package lld.splitwise.models
 
 import java.net.URL
+import java.time.Instant
 
+// TODO: add audit columns
 interface Expense {
     /**
      * Attributes
