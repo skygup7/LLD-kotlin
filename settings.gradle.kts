@@ -8,4 +8,4 @@
  */
 
 rootProject.name = "LLD-kotlin"
-include("app", "list", "utilities")
+include("splitwise")
