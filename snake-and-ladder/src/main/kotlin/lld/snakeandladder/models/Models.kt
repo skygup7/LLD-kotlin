@@ -24,9 +24,9 @@ data class RunTimeGameBoard(
     val snakes: Map<Long, Long>,
 
     val players: List<Player>,
-    val playerPositions: Map<String, Long>,
+    val playerPositions: MutableMap<String, Long>,
 
-    val winningOrder: List<Player>
+    val winningOrder: MutableList<Player>
 )
 
 data class Player(
