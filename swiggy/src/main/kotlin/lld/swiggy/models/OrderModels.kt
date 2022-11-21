@@ -5,7 +5,8 @@ data class Order(
     val userId: EntityPublicId,
     val restaurantId: EntityPublicId,
     val orderItems: Set<String>, // Set of menuItemIds
-    val status: OrderStatus
+    val status: OrderStatus,
+    val deliveryAgent: DeliveryAgent?
 )
 
 enum class OrderStatus {
@@ -17,3 +18,8 @@ enum class OrderStatus {
     OrderDelivered,
     OrderCancelled
 }
+
+data class OrderRequest(
+    val restaurantId: EntityPublicId,
+    val orderItems: Set<String>, // Set of menuItemIds
+)

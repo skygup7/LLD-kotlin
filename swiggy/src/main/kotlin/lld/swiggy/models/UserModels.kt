@@ -5,3 +5,8 @@ data class User(
     val name: String,
     val location: Location
 )
+
+data class UserAddRequest(
+    val name: String,
+    val location: Location
+)
