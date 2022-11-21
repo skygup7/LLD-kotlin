@@ -24,7 +24,7 @@ data class EntityPublicId(
     val publicId: String
 ) {
     override fun toString(): String {
-        return prefix.name + publicId
+        return prefix.name + ":" + publicId
     }
 }
 
