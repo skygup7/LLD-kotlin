@@ -18,7 +18,7 @@ interface SwiggyUserService {
 
     fun getMenuItemsForRestaurant(restaurantId: EntityPublicId): List<MenuItem>
 
-    fun placeOrder(orderRequest: OrderRequest): Order
+    fun placeOrder(userId: EntityPublicId, orderRequest: OrderRequest): Order
 
     fun getOrderListForUser(userId: EntityPublicId): List<Order>
 
