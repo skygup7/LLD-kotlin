@@ -5,7 +5,7 @@ import lld.splitwise.models.Expense
 import lld.splitwise.repository.ExpenseRepository
 import kotlin.math.abs
 
-class ExpenseRepositoryInMemImpl: ExpenseRepository {
+class ExpenseRepositoryInMemImpl : ExpenseRepository {
 
     companion object {
         private const val MARGIN_ERROR: Double = 0.01
@@ -45,5 +45,4 @@ class ExpenseRepositoryInMemImpl: ExpenseRepository {
             )
         }.filter { abs(it.amount - 0.0) > MARGIN_ERROR } // non-zero amount check by using round-off margin
     }
-
 }

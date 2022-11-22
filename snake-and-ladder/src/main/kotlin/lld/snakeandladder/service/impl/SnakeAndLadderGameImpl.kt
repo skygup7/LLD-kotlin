@@ -9,7 +9,7 @@ import org.slf4j.LoggerFactory
 class SnakeAndLadderGameImpl(
     private val gameBoard: RunTimeGameBoard,
     private val diceCount: Long
-): SnakeAndLadderGame {
+) : SnakeAndLadderGame {
 
     private val logger = LoggerFactory.getLogger(SnakeAndLadderGameImpl::class.java)
 
@@ -62,7 +62,7 @@ class SnakeAndLadderGameImpl(
                 logger.info("Yay! found ladder. Taking ${player.name} to position: $newPos")
                 continue
             }
-            break;
+            break
         }
 
         gameBoard.playerPositions[player.id] = newPos

@@ -3,7 +3,7 @@ package lld.splitwise.repository.impls
 import lld.splitwise.models.User
 import lld.splitwise.repository.UserRepository
 
-class UserRepositoryInMemImpl: UserRepository {
+class UserRepositoryInMemImpl : UserRepository {
 
     private val users: MutableMap<String, User> = mutableMapOf()
 

@@ -5,10 +5,8 @@ import lld.snakeandladder.service.SnakeAndLadderGame
 import lld.snakeandladder.service.impl.SnakeAndLadderGameImpl
 import lld.snakeandladder.utils.SnakeAndLadderGameInitUtil
 import org.slf4j.LoggerFactory
-import java.util.logging.Logger
 
-
-private  val logger = LoggerFactory.getLogger("SnakeAndLadder")
+private val logger = LoggerFactory.getLogger("SnakeAndLadder")
 
 fun main() {
     logger.info("Welcome to Snake and Ladder")
@@ -35,7 +33,7 @@ fun main() {
 
     snakeAndLadderGame.startGame()
 
-    logger.info (
+    logger.info(
         "Winning order is: " + snakeAndLadderGame.getWinningOrder().joinToString(", ") { it.name }
     )
 

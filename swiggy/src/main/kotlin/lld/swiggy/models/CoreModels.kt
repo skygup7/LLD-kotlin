@@ -16,7 +16,8 @@ enum class EntityPrefix {
     user,
     restaurant,
     menuItem,
-    deliveryAgent
+    deliveryAgent,
+    order
 }
 
 data class EntityPublicId(

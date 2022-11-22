@@ -5,5 +5,5 @@ data class Restaurant(
     val name: String,
     val location: Location,
     val rating: Rating,
-    val menuItems: Set<String> // Set of menuItemIds
+    val menuItems: Set<EntityPublicId> // Set of menuItemIds
 )

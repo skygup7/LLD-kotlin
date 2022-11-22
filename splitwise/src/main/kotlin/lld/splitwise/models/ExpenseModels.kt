@@ -1,7 +1,6 @@
 package lld.splitwise.models
 
 import java.net.URL
-import java.time.Instant
 
 // TODO: add audit columns
 interface Expense {
@@ -33,7 +32,7 @@ data class EqualExpense(
     override val amount: Long,
     override val splits: List<EqualSplit>,
     override val metaData: ExpenseMetaData
-): Expense {
+) : Expense {
     override fun validate(): Boolean {
         return true
     }
@@ -49,7 +48,7 @@ data class ExactExpense(
     override val amount: Long,
     override val splits: List<ExactSplit>,
     override val metaData: ExpenseMetaData
-): Expense {
+) : Expense {
     override fun validate(): Boolean {
 
         val total: Long = splits.fold(0L) { acc, split -> acc + split.amount }
@@ -70,7 +69,7 @@ data class PercentExpense(
     override val amount: Long,
     override val splits: List<PercentSplit>,
     override val metaData: ExpenseMetaData
-): Expense {
+) : Expense {
     override fun validate(): Boolean {
 
         val totalPercentage: Long = splits.fold(0) { acc, split -> acc + split.percent }
