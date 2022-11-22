@@ -60,8 +60,10 @@ fun main() {
      */
     LOGGER.info("Splitwise initialised")
 
-    LOGGER.info("Expense input format: EXPENSE <paid-by-user-id> <amount> <number-of-users> <space-separated-list-of-users>" +
-            " <Equal/Exact/Percent> <space-separated-values-in-case-of-non-equal>")
+    LOGGER.info(
+        "Expense input format: EXPENSE <paid-by-user-id> <amount> <number-of-users> <space-separated-list-of-users>" +
+            " <Equal/Exact/Percent> <space-separated-values-in-case-of-non-equal>"
+    )
 
     LOGGER.info("Show balances for all: Show")
 
@@ -77,20 +79,20 @@ fun main() {
     var ioReaderFlag = true
     var it: Int
     while (ioReaderFlag) {
-        run ioBlock@ {
+        run ioBlock@{
             LOGGER.info("Ready to store and split expenses. Waiting for user input for next expense")
 
             val lineInput = readln()
 
             val inputTokens: List<String> = lineInput.split(" ")
 
-            it = 1;
+            it = 1
             when (inputTokens[0]) {
                 "Expense" -> {
-                    val paidBy = inputTokens[it]; it++;
-                    val amount = inputTokens[it].toLong(); it++;
-                    val splitUserCount = inputTokens[it].toInt(); it++;
-                    val splitUsers = inputTokens.slice(it until it + splitUserCount); it += splitUserCount;
+                    val paidBy = inputTokens[it]; it++
+                    val amount = inputTokens[it].toLong(); it++
+                    val splitUserCount = inputTokens[it].toInt(); it++
+                    val splitUsers = inputTokens.slice(it until it + splitUserCount); it += splitUserCount
 
                     val splitType: SplitType = try {
                         SplitType.valueOf(inputTokens[it])
@@ -154,7 +156,6 @@ fun main() {
             }
         }
     }
-
 
     LOGGER.info("Thank you for using the Splitwise application. Come back soon with more expenses. Bye, until then")
 }

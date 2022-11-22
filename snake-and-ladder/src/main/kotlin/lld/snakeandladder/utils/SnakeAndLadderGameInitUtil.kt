@@ -6,7 +6,7 @@ import lld.snakeandladder.models.Player
 import lld.snakeandladder.models.PlayerColor
 import lld.snakeandladder.models.Snake
 import org.slf4j.LoggerFactory
-import java.util.*
+import java.util.UUID
 
 object SnakeAndLadderGameInitUtil {
 

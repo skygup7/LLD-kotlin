@@ -8,6 +8,7 @@
  */
 
 rootProject.name = "LLD-kotlin"
+
 include(
     "splitwise",
     "snake-and-ladder",

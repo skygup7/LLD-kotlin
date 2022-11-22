@@ -17,7 +17,7 @@ import lld.swiggy.repository.RestaurantRepository
 import lld.swiggy.repository.UserRepository
 import lld.swiggy.service.SwiggyUserService
 import org.slf4j.LoggerFactory
-import java.util.*
+import java.util.UUID
 
 class SwiggyUserServiceImpl(
     private val userRepository: UserRepository,
@@ -25,7 +25,7 @@ class SwiggyUserServiceImpl(
     private val menuItemRepository: MenuItemRepository,
     private val orderRepository: OrderRepository,
     private val deliveryAgentRepository: DeliveryAgentRepository
-): SwiggyUserService {
+) : SwiggyUserService {
 
     companion object {
         private val LOGGER = LoggerFactory.getLogger(SwiggyUserServiceImpl::class.java)

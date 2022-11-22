@@ -1,6 +1,5 @@
 package lld.swiggy.service
 
-import lld.swiggy.models.DeliveryAgent
 import lld.swiggy.models.EntityPublicId
 import lld.swiggy.models.Location
 import lld.swiggy.models.Order
