@@ -1,4 +1,4 @@
-package lld.concurrency
+package lld.concurrency.producerconsumer
 
 import lld.concurrency.producerconsumer.BlockingQueueWithSemaphore
 import java.lang.Thread.sleep
