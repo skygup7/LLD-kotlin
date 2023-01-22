@@ -17,7 +17,7 @@ class BlockingQueueWithSemaphore<T>(
     private var size = 0;
     private val q = LinkedList<T>()
 
-    fun allSet() {
+    fun checkIfAllSet() {
 
         println("available producer permits: ${producerSemaphore.availablePermits()}")
         println("available consumer permits: ${consumerSemaphore.availablePermits()}")

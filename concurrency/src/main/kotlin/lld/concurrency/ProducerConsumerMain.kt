@@ -8,7 +8,7 @@ import kotlin.concurrent.thread
 fun main () {
     val blockingQueue = BlockingQueueWithSemaphore<String>(5)
 
-    blockingQueue.allSet()
+    blockingQueue.checkIfAllSet()
 
     // 2 producers
     val producer1 = thread(start = true, isDaemon = true) {
