@@ -13,12 +13,12 @@ fun main () {
     // 2 producers
     val producer1 = thread(start = true, isDaemon = true) {
         for (i in 1..100) {
-            blockingQueue.enqueue(threadName = "A", value = "thread: 1, val: $i")
+            blockingQueue.enqueue(threadName = "A", value = "thread: A, val: $i")
         }
     }
     val producer2 = thread(start = true, isDaemon = true) {
         for (i in 1..100) {
-            blockingQueue.enqueue(threadName = "B", value = "thread: 2, val: $i")
+            blockingQueue.enqueue(threadName = "B", value = "thread: B, val: $i")
         }
     }
 
