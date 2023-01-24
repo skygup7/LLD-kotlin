@@ -16,8 +16,6 @@ class FilterTokenProviderWithDaemonThread(
     private val minimumMilliTimeBetween2Requests: Double = 1/allowedRequestsPerMilliSecond
 
     private val tokenSemaphore = Semaphore(0)
-    private val lock = ReentrantLock()
-    private val cv = tokenSemaphore
 
     init {
         thread(start = true, isDaemon = true) {
