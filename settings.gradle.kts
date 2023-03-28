@@ -10,7 +10,8 @@
 rootProject.name = "LLD-kotlin"
 
 include(
-    "splitwise",
+    "concurrency",
     "snake-and-ladder",
+    "splitwise",
     "swiggy"
 )
